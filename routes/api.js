@@ -13,13 +13,14 @@ app.get("/api/notes", function (req, res) {
 // POST
 app.post("/api/notes", function (req, res) {
 	console.log('req');
-	console.log(req);
-	console.log('---');
-	fs.readFile("./db/db.json", function (err, data) {
-	fs.writeFile("./db/db.json", res.json(JSON.parse(data).push(req.body)), () => { console.log('success write');
-		
-	})
+	console.log(req.body);
+	
+	fs.readFile("db/db.json", function (err, data) {
+		// console.log("db read : ", JSON.parse(data));
+	// res.json(JSON.parse(data).push(input));
 	});
+
+
 });
 
 
