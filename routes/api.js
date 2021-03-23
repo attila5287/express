@@ -2,6 +2,7 @@ module.exports = function (app) {
 // app.use(express.static("public"));
 const fs = require("fs");
 const path = require("path");
+
 app.get("/api/notes", function (req, res) {
 	fs.readFile("./db/db.json", function (err, data) {
 		if (err) {
@@ -10,21 +11,23 @@ app.get("/api/notes", function (req, res) {
 		res.json(JSON.parse(data));
 	});
 });
+
 // POST
 app.post("/api/notes", function (req, res) {
 	console.log('req');
 	console.log(req.body);
-	
+	let dj;
 	fs.readFile("db/db.json", function (err, data) {
-		// console.log("db read : ", JSON.parse(data));
-	// res.json(JSON.parse(data).push(input));
-	});
+		dj = JSON.parse(data); // data json
+		console.log('dj :>> ', dj);
+		dj.push(req.body);
+		fs.writeFile("db/db.json", JSON.stringify(dj), () => {
+			console.log("write on file success");
+		});		
 
+	});
 
 });
 
-
-// ---
 // dtt
-// ---
 };
