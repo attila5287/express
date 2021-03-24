@@ -37,7 +37,6 @@ app.post("/api/notes", function (req, res) {
 
 app.delete("/api/notes", () => {
 	console.log('ADD DELETE METHOD');
-	
 })
 
 // dtt
