@@ -1,6 +1,7 @@
 11 Express.js 
 ======
-
+  note taking app with no db but client-side localStorage to save notes and user preferences
+  ---
  ![alt text](https://raw.githubusercontent.com/attila5287/express/main/img/note_taker.png "github-logo-png")|---|
  |---|---|
   Note Taker : Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file. | ---|
