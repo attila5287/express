@@ -76,3 +76,14 @@ The following images show the web application's appearance and functionality:
 ![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Develop/Assets/11-express-homework-demo-01.png)
 
 ![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Develop/Assets/11-express-homework-demo-02.png)
+
+
+| ![dev]( https://raw.githubusercontent.com/attila5287/img_readme/main/all/dev.jpg "dev-icon") | About Developer | 
+| -------------   | -------------: |
+| Repos | [github.com/attila5287 ](https://github.com/attila5287/) |
+| Profile | [ attila5287.github.io ](https:///attila5287.github.io/) |
+| Email    |  atiturkoz@hotmail.com | 
+
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
